@@ -780,10 +780,8 @@ font-size:15px;
         HIDDEN
 =========================*/
 
-.hidden{
-
-    display:none;
-
+.hidden {
+    display: none !important;
 }
 
 
