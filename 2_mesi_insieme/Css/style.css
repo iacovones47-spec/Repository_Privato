@@ -1,0 +1,2866 @@
+/*=========================
+    RESET
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(180deg,#081124,#111b38,#1b2657,#2f1c4d);
+
+    color:white;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+
+/*=========================
+    SCROLLBAR
+=========================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0b1020;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff5ca8;
+
+    border-radius:20px;
+
+}
+
+
+/*=========================
+    SEZIONI
+=========================*/
+
+section{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+    position:relative;
+
+}
+
+
+/*=========================
+    STELLE
+=========================*/
+
+#stars{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-3;
+
+    background-image:
+
+    radial-gradient(white 1px, transparent 1px),
+
+    radial-gradient(#ffffff80 1px, transparent 1px),
+
+    radial-gradient(#ffd5ec 2px, transparent 2px);
+
+    background-size:
+
+    90px 90px,
+
+    150px 150px,
+
+    220px 220px;
+
+    animation:starsMove 150s linear infinite;
+
+}
+
+
+@keyframes starsMove{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-700px);
+
+    }
+
+}
+
+
+/*=========================
+        CUORI
+=========================*/
+
+#hearts{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+
+/*=========================
+        LUNA
+=========================*/
+
+.moon{
+
+    position:fixed;
+
+    top:60px;
+
+    right:60px;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:#fff8d8;
+
+    box-shadow:
+
+    0 0 30px white,
+
+    0 0 60px #ffe082,
+
+    0 0 120px #fff5c4;
+
+    z-index:-1;
+
+}
+
+
+/*=========================
+        INTRO
+=========================*/
+
+#intro{
+
+    text-align:center;
+
+}
+
+
+#intro h2{
+
+    font-size:3rem;
+
+    font-family:'Great Vibes',cursive;
+
+    margin-bottom:40px;
+
+    animation:fadeDown 2s;
+
+}
+
+
+#startButton{
+
+    border:none;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    background:#ff5ca8;
+
+    color:white;
+
+    font-size:1.1rem;
+
+    transition:.4s;
+
+    box-shadow:0 0 30px #ff5ca8;
+
+}
+
+
+#startButton:hover{
+
+    transform:scale(1.08);
+
+    background:#ff8cc6;
+
+}
+
+
+/*=========================
+        HOME
+=========================*/
+
+#home{
+
+    text-align:center;
+
+}
+
+
+#home h1{
+
+    font-size:5rem;
+
+    font-family:'Great Vibes',cursive;
+
+    color:#ffd4e9;
+
+}
+
+
+#home h3{
+
+    margin-top:20px;
+
+    font-size:2rem;
+
+}
+
+
+.date{
+
+    margin-top:15px;
+
+    opacity:.8;
+
+    font-size:1.1rem;
+
+}
+
+
+/*=========================
+        TIMER
+=========================*/
+
+#timer{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:50px;
+
+    flex-wrap:wrap;
+
+}
+
+
+#timer div{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.4s;
+
+}
+
+
+#timer div:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px #ff5ca8;
+
+}
+
+
+#timer span{
+
+    font-size:2.3rem;
+
+    font-weight:bold;
+
+}
+
+
+#timer small{
+
+    margin-top:10px;
+
+    opacity:.8;
+
+}
+
+
+/*=========================
+        TITOLI
+=========================*/
+
+h2{
+
+    font-size:3rem;
+
+    margin-bottom:40px;
+
+    text-align:center;
+
+}
+
+
+p{
+
+    max-width:700px;
+
+    line-height:1.8;
+
+}
+
+
+/*=========================
+        BOTTONI
+=========================*/
+
+button{
+
+    transition:.4s;
+
+}
+
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/*====================================
+        LETTERA REALISTICA ❤️
+====================================*/
+
+
+#letter{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+
+
+/* BUSTA */
+
+.envelope{
+
+position:relative;
+
+width:350px;
+
+height:240px;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#ff7eb3,
+
+#ff4f91
+
+);
+
+border-radius:10px;
+
+box-shadow:
+
+0 30px 60px rgba(0,0,0,.4);
+
+cursor:pointer;
+
+perspective:1000px;
+
+}
+
+
+
+
+/* PARTE SOPRA DELLA BUSTA */
+
+.flap{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#ff9ac5,
+
+#ff5c9c
+
+);
+
+clip-path:
+
+polygon(
+
+0 0,
+
+100% 0,
+
+50% 55%
+
+);
+
+transform-origin:top;
+
+transition:1s;
+
+z-index:5;
+
+}
+
+
+
+
+/* FOGLIO */
+
+.paper{
+
+position:absolute;
+
+left:15px;
+
+right:15px;
+
+top:20px;
+
+height:400px;
+
+background:
+
+#fff9ed;
+
+border-radius:8px;
+
+padding:30px;
+
+box-sizing:border-box;
+
+overflow:auto;
+
+transform:
+
+translateY(0);
+
+transition:1s;
+
+opacity:0;
+
+z-index:2;
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.3);
+
+}
+
+
+
+
+#letterContent{
+
+font-family:
+
+'Georgia',serif;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#5a3040;
+
+}
+
+
+
+
+
+/* CUORE */
+
+.heartSeal{
+
+position:absolute;
+
+left:50%;
+
+top:55%;
+
+transform:
+
+translate(-50%,-50%);
+
+font-size:60px;
+
+z-index:10;
+
+filter:
+
+drop-shadow(0 0 15px pink);
+
+transition:.5s;
+
+animation:
+
+heartBeat 2s infinite;
+
+}
+
+
+
+
+@keyframes heartBeat{
+
+
+0%{
+
+transform:
+
+translate(-50%,-50%)
+
+scale(1);
+
+}
+
+
+50%{
+
+transform:
+
+translate(-50%,-50%)
+
+scale(1.2);
+
+}
+
+
+100%{
+
+transform:
+
+translate(-50%,-50%)
+
+scale(1);
+
+}
+
+
+}
+
+
+
+
+/* QUANDO SI APRE */
+
+
+.envelope.open .flap{
+
+transform:
+
+rotateX(180deg);
+
+}
+
+
+
+.envelope.open .paper{
+
+
+transform:
+
+translateY(-180px);
+
+opacity:1;
+
+z-index:8;
+
+}
+
+
+
+
+.envelope.open .heartSeal{
+
+
+opacity:0;
+
+transform:
+
+translate(-50%,-50%)
+
+scale(0);
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.envelope{
+
+width:280px;
+
+height:200px;
+
+}
+
+
+
+.paper{
+
+height:360px;
+
+padding:20px;
+
+}
+
+
+
+#letterContent{
+
+font-size:15px;
+
+}
+
+
+}
+
+
+/*=========================
+        CANVAS GIOCO
+=========================*/
+
+#gameCanvas{
+
+    width:90%;
+
+    max-width:700px;
+
+    height:500px;
+
+    border-radius:20px;
+
+    border:2px solid white;
+
+    background:#0b1736;
+
+}
+
+
+/*=========================
+        FINALE
+=========================*/
+
+#final h1{
+
+    font-size:4rem;
+
+    font-family:'Great Vibes',cursive;
+
+}
+
+
+#fireworks{
+
+    margin-top:40px;
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    border:none;
+
+    font-size:2rem;
+
+    background:#ff5ca8;
+
+    box-shadow:0 0 30px #ff5ca8;
+
+}
+
+
+/*=========================
+        HIDDEN
+=========================*/
+
+.hidden{
+
+    display:none;
+
+}
+
+
+/*=========================
+        ANIMAZIONI
+=========================*/
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-100px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(100px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/*=========================
+    RESPONSIVE TABLET
+=========================*/
+
+@media(max-width:900px){
+
+    #home h1{
+
+        font-size:4rem;
+
+    }
+
+    #timer{
+
+        gap:15px;
+
+    }
+
+    #timer div{
+
+        width:100px;
+
+        height:100px;
+
+    }
+
+}
+
+
+/*=========================
+    RESPONSIVE TELEFONO
+=========================*/
+
+@media(max-width:600px){
+
+    .moon{
+
+        width:80px;
+
+        height:80px;
+
+        top:25px;
+
+        right:25px;
+
+    }
+
+    #intro h2{
+
+        font-size:2.2rem;
+
+    }
+
+    #home h1{
+
+        font-size:3rem;
+
+    }
+
+    h2{
+
+        font-size:2rem;
+
+    }
+
+    #timer{
+
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        width:100%;
+
+    }
+
+    #timer div{
+
+        width:100%;
+
+    }
+
+}
+
+/*==================================================
+            PARTE 2
+      EFFETTI GRAFICI AVANZATI
+==================================================*/
+
+
+/*====================================
+            GALASSIA
+====================================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at 20% 20%,rgba(255,150,220,.18),transparent 25%),
+    radial-gradient(circle at 80% 40%,rgba(130,120,255,.20),transparent 30%),
+    radial-gradient(circle at 50% 90%,rgba(255,255,255,.08),transparent 35%);
+
+    animation:galaxyMove 30s ease-in-out infinite alternate;
+
+    z-index:-5;
+
+}
+
+
+@keyframes galaxyMove{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.2) rotate(6deg);
+
+    }
+
+}
+
+
+
+/*====================================
+      STELLE CHE BRILLANO
+====================================*/
+
+#stars::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    radial-gradient(white 2px,transparent 2px);
+
+    background-size:180px 180px;
+
+    animation:twinkle 4s infinite;
+
+}
+
+
+@keyframes twinkle{
+
+    0%{
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+    }
+
+}
+
+
+
+/*====================================
+      EFFETTO LUCE LUNA
+====================================*/
+
+.moon::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-25px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    filter:blur(20px);
+
+    animation:pulseMoon 5s infinite;
+
+}
+
+
+@keyframes pulseMoon{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:.4;
+
+    }
+
+    50%{
+
+        transform:scale(1.25);
+
+        opacity:.9;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:.4;
+
+    }
+
+}
+
+
+
+/*====================================
+      GLASSMORPHISM
+====================================*/
+
+section{
+
+    backdrop-filter:blur(3px);
+
+}
+
+
+#home,
+#gallery,
+#quiz,
+#letter,
+#lalaland,
+#game,
+#final{
+
+    background:rgba(255,255,255,.03);
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+}
+
+
+
+/*====================================
+        GALLERIA ROMANTICA 📸
+====================================*/
+
+
+.gallery-container{
+
+width:95%;
+
+max-width:900px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:15px;
+
+}
+
+
+
+.gallery-window{
+
+width:100%;
+
+overflow:hidden;
+
+border-radius:25px;
+
+}
+
+
+
+.gallery-track{
+
+display:flex;
+
+transition:.7s ease;
+
+}
+
+
+
+.gallery-track img{
+
+min-width:100%;
+
+height:550px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+padding:10px;
+
+background:white;
+
+box-shadow:
+
+0 20px 50px rgba(0,0,0,.4);
+
+}
+
+
+
+
+.prev,
+.next{
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#ff5ca8;
+
+color:white;
+
+font-size:30px;
+
+cursor:pointer;
+
+box-shadow:
+
+0 0 25px pink;
+
+}
+
+
+
+.prev:hover,
+.next:hover{
+
+transform:scale(1.15);
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+
+.gallery-track img{
+
+height:350px;
+
+}
+
+
+
+.prev,
+.next{
+
+width:45px;
+
+height:45px;
+
+font-size:20px;
+
+}
+
+
+}
+
+
+
+/*====================================
+        POLAROID
+====================================*/
+
+.slides img{
+
+    padding:12px;
+
+    background:white;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+
+.slides img:hover{
+
+    transform:scale(1.05) rotate(-2deg);
+
+}
+
+
+
+/*====================================
+        TITOLI
+====================================*/
+
+h1,h2{
+
+    text-shadow:
+
+    0 0 10px rgba(255,255,255,.3),
+
+    0 0 20px rgba(255,120,180,.5);
+
+}
+
+
+
+/*====================================
+        CARD TIMER
+====================================*/
+
+#timer div{
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+#timer div::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-100%;
+
+    width:200%;
+
+    height:200%;
+
+    background:linear-gradient(
+
+    transparent,
+
+    rgba(255,255,255,.3),
+
+    transparent
+
+    );
+
+    transform:rotate(45deg);
+
+    animation:shine 6s infinite;
+
+}
+
+
+@keyframes shine{
+
+    from{
+
+        transform:translateX(-250px) rotate(45deg);
+
+    }
+
+    to{
+
+        transform:translateX(450px) rotate(45deg);
+
+    }
+
+}
+
+
+
+/*====================================
+      PULSANTE PRINCIPALE
+====================================*/
+
+#startButton{
+
+    animation:heartbeat 2s infinite;
+
+}
+
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    25%{
+
+        transform:scale(1.08);
+
+    }
+
+    50%{
+
+        transform:scale(1);
+
+    }
+
+    75%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/*====================================
+      OMBRE
+====================================*/
+
+section h2{
+
+    margin-bottom:50px;
+
+}
+
+
+img{
+
+    user-select:none;
+
+}
+
+
+
+/*====================================
+      EFFETTO HOVER FOTO
+====================================*/
+
+.slides img{
+
+    cursor:pointer;
+
+}
+
+
+.slides img:hover{
+
+    filter:brightness(110%);
+
+}
+
+
+
+/*====================================
+      SCROLL
+====================================*/
+
+section{
+
+    animation:fadeUp 1.5s;
+
+}
+
+
+
+/*====================================
+        RESPONSIVE
+====================================*/
+
+@media(max-width:768px){
+
+.slides img{
+
+height:350px;
+
+}
+
+.slider{
+
+gap:10px;
+
+}
+
+.prev,
+.next{
+
+width:45px;
+height:45px;
+
+font-size:22px;
+
+}
+
+}
+
+
+
+@media(max-width:480px){
+
+.slides img{
+
+height:260px;
+
+}
+
+.prev,
+.next{
+
+display:none;
+
+}
+
+}
+
+/*==================================================
+            PARTE 3
+     ANIMAZIONI ROMANTICHE AVANZATE
+==================================================*/
+
+
+/*=============================
+    CUORI CHE CADONO
+=============================*/
+
+.heart{
+
+    position:fixed;
+
+    width:18px;
+
+    height:18px;
+
+    background:#ff4d88;
+
+    transform:rotate(45deg);
+
+    animation:fall linear forwards;
+
+    z-index:999;
+
+}
+
+.heart::before,
+.heart::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:18px;
+    height:18px;
+
+    background:#ff4d88;
+
+    border-radius:50%;
+
+}
+
+.heart::before{
+
+    top:-9px;
+
+    left:0;
+
+}
+
+.heart::after{
+
+    left:-9px;
+
+    top:0;
+
+}
+
+@keyframes fall{
+
+    from{
+
+        transform:translateY(-100px) rotate(45deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(120vh) rotate(405deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/*=============================
+    PARTICELLE MAGICHE
+=============================*/
+
+.particle{
+
+    position:fixed;
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+
+    0 0 15px white,
+
+    0 0 30px pink;
+
+    pointer-events:none;
+
+    animation:particle 2s linear forwards;
+
+}
+
+@keyframes particle{
+
+    to{
+
+        transform:translateY(-150px);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/*=============================
+      PETALI
+=============================*/
+
+.petal{
+
+    position:fixed;
+
+    width:20px;
+
+    height:20px;
+
+    background:pink;
+
+    border-radius:60% 40% 60% 40%;
+
+    opacity:.7;
+
+    animation:petalFall linear forwards;
+
+}
+
+@keyframes petalFall{
+
+    from{
+
+        transform:translateY(-80px) rotate(0deg);
+
+    }
+
+    to{
+
+        transform:translateY(110vh) rotate(720deg);
+
+    }
+
+}
+
+
+
+/*=============================
+      STELLE CADENTI
+=============================*/
+
+.shooting-star{
+
+    position:fixed;
+
+    width:180px;
+
+    height:2px;
+
+    background:linear-gradient(90deg,white,transparent);
+
+    animation:shoot 2s linear;
+
+}
+
+@keyframes shoot{
+
+    from{
+
+        transform:translate(-200px,-200px) rotate(35deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translate(120vw,120vh) rotate(35deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/*=============================
+      FOTO
+=============================*/
+
+.slides img{
+
+    transition:0.6s;
+
+}
+
+.slides img:active{
+
+    transform:scale(.95);
+
+}
+
+
+
+/*=============================
+      LETTERA
+=============================*/
+
+#letter{
+
+    position:relative;
+
+}
+
+#letterContent{
+
+    animation:openLetter 1s;
+
+}
+
+@keyframes openLetter{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(100px) rotateX(-90deg);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0) rotateX(0);
+
+    }
+
+}
+
+
+
+/*=============================
+      BOTTONE
+=============================*/
+
+button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+button::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-150%;
+
+    top:0;
+
+    width:80px;
+
+    height:100%;
+
+    background:rgba(255,255,255,.3);
+
+    transform:skewX(-20deg);
+
+}
+
+button:hover::after{
+
+    left:150%;
+
+    transition:.8s;
+
+}
+
+
+
+/*=============================
+      GLOW TITOLI
+=============================*/
+
+h1{
+
+    animation:titleGlow 4s infinite;
+
+}
+
+@keyframes titleGlow{
+
+    0%{
+
+        text-shadow:0 0 10px white;
+
+    }
+
+    50%{
+
+        text-shadow:
+
+        0 0 20px pink,
+
+        0 0 40px hotpink,
+
+        0 0 70px violet;
+
+    }
+
+    100%{
+
+        text-shadow:0 0 10px white;
+
+    }
+
+}
+
+
+
+/*=============================
+      LUNA
+=============================*/
+
+.moon{
+
+    animation:moonFloat 8s ease-in-out infinite;
+
+}
+
+@keyframes moonFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/*=============================
+      SCROLL
+=============================*/
+
+section{
+
+    opacity:0;
+
+    animation:sectionAppear 1s forwards;
+
+}
+
+@keyframes sectionAppear{
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+/*=============================
+      CANVAS
+=============================*/
+
+#gameCanvas{
+
+    box-shadow:
+
+    0 0 30px pink,
+
+    0 0 80px rgba(255,105,180,.4);
+
+}
+
+
+
+/*=============================
+      FOOTER FINALE
+=============================*/
+
+#final{
+
+    background:
+
+    linear-gradient(
+
+    180deg,
+
+    transparent,
+
+    rgba(255,0,100,.15)
+
+    );
+
+}
+
+
+
+/*=============================
+      GLASS
+=============================*/
+
+#letterContent{
+
+    box-shadow:
+
+    0 0 40px rgba(255,255,255,.15);
+
+}
+
+
+
+/*=============================
+      FOTO HOVER
+=============================*/
+
+.slides img:hover{
+
+    box-shadow:
+
+    0 0 40px white,
+
+    0 0 80px hotpink;
+
+}
+
+
+
+/*=============================
+      TIMER
+=============================*/
+
+#timer span{
+
+    color:white;
+
+    animation:numberPulse 2s infinite;
+
+}
+
+@keyframes numberPulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+
+/*=============================
+      RESPONSIVE
+=============================*/
+
+@media(max-width:600px){
+
+    .heart{
+
+        width:14px;
+        height:14px;
+
+    }
+
+    .heart::before,
+    .heart::after{
+
+        width:14px;
+        height:14px;
+
+    }
+
+}
+
+/*====================================
+        QUIZ STYLE
+====================================*/
+
+
+#quizContainer{
+
+width:90%;
+
+max-width:600px;
+
+background:rgba(255,255,255,.08);
+
+padding:30px;
+
+border-radius:30px;
+
+backdrop-filter:blur(20px);
+
+box-shadow:0 0 40px rgba(255,100,180,.3);
+
+}
+
+
+#answers{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+margin-top:30px;
+
+}
+
+
+.answer{
+
+padding:18px;
+
+border:none;
+
+border-radius:20px;
+
+background:#ff5ca8;
+
+color:white;
+
+font-size:1rem;
+
+cursor:pointer;
+
+}
+
+
+.answer:hover{
+
+transform:scale(1.03);
+
+}
+
+
+#progressBar{
+
+height:10px;
+
+background:#ffffff30;
+
+border-radius:20px;
+
+overflow:hidden;
+
+margin-bottom:30px;
+
+}
+
+
+#progress{
+
+height:100%;
+
+width:0%;
+
+background:linear-gradient(
+
+90deg,
+
+pink,
+
+violet
+
+);
+
+transition:.5s;
+
+}
+
+
+.quizHeart{
+
+position:fixed;
+
+font-size:40px;
+
+animation:quizHeartUp 2s forwards;
+
+z-index:999;
+
+}
+
+
+@keyframes quizHeartUp{
+
+from{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+to{
+
+transform:translateY(-200px);
+
+opacity:0;
+
+}
+
+}
+
+
+.quizExplosion{
+
+position:fixed;
+
+font-size:30px;
+
+animation:explode 2s forwards;
+
+}
+
+
+@keyframes explode{
+
+to{
+
+transform:
+
+translate(var(--x),var(--y))
+
+scale(2);
+
+opacity:0;
+
+}
+
+}
+
+/*====================================
+        SECRET MESSAGE
+====================================*/
+
+
+.secretMessage{
+
+position:fixed;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+background:
+
+rgba(20,20,50,.9);
+
+padding:40px;
+
+border-radius:30px;
+
+text-align:center;
+
+font-size:25px;
+
+color:white;
+
+z-index:9999;
+
+box-shadow:
+
+0 0 50px pink;
+
+animation:secretAppear 1s;
+
+}
+
+
+@keyframes secretAppear{
+
+
+from{
+
+opacity:0;
+
+transform:
+
+translate(-50%,-50%)
+
+scale(.3);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+
+translate(-50%,-50%)
+
+scale(1);
+
+}
+
+
+}
+
+
+
+@keyframes clickHeart{
+
+
+from{
+
+transform:scale(.5);
+
+opacity:1;
+
+}
+
+
+to{
+
+transform:
+
+translateY(-100px)
+
+scale(2);
+
+opacity:0;
+
+}
+
+}
+
+/*====================================
+        CUORI GAME
+====================================*/
+
+
+#heartGame{
+
+width:90%;
+
+max-width:700px;
+
+background:rgba(255,255,255,.08);
+
+padding:25px;
+
+border-radius:30px;
+
+backdrop-filter:blur(20px);
+
+text-align:center;
+
+}
+
+
+
+#gameInfo{
+
+display:flex;
+
+justify-content:space-around;
+
+font-size:1.2rem;
+
+margin-bottom:20px;
+
+}
+
+
+
+#startGame{
+
+background:#ff5ca8;
+
+color:white;
+
+border:none;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+
+
+
+#gameArea{
+
+position:relative;
+
+height:500px;
+
+margin-top:30px;
+
+border-radius:25px;
+
+overflow:hidden;
+
+background:
+
+radial-gradient(circle,#222b60,#070b20);
+
+border:2px solid rgba(255,255,255,.2);
+
+}
+
+
+
+.gameHeart{
+
+position:absolute;
+
+cursor:pointer;
+
+animation:heartAppear .5s;
+
+filter:drop-shadow(0 0 15px pink);
+
+user-select:none;
+
+}
+
+
+
+.gameHeart:hover{
+
+transform:scale(1.3);
+
+}
+
+
+
+@keyframes heartAppear{
+
+
+from{
+
+transform:scale(0);
+
+}
+
+
+to{
+
+transform:scale(1);
+
+}
+
+
+}
+
+
+
+#gameResult{
+
+margin-top:30px;
+
+font-size:1.4rem;
+
+color:#ffd1e8;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+#gameArea{
+
+height:400px;
+
+}
+
+
+#gameInfo{
+
+font-size:.9rem;
+
+}
+
+
+}
+
+/*====================================
+        EASTER EGG
+====================================*/
+
+
+.secretMessage{
+
+position:fixed;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:85%;
+
+max-width:500px;
+
+background:
+
+rgba(10,15,40,.95);
+
+padding:40px;
+
+border-radius:30px;
+
+text-align:center;
+
+font-size:24px;
+
+color:white;
+
+z-index:99999;
+
+box-shadow:
+
+0 0 40px pink,
+
+0 0 80px purple;
+
+animation:
+
+secretShow 1s ease;
+
+}
+
+
+
+@keyframes secretShow{
+
+
+from{
+
+opacity:0;
+
+transform:
+
+translate(-50%,-50%)
+
+scale(.2);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+
+translate(-50%,-50%)
+
+scale(1);
+
+}
+
+
+}
+
+/*====================================
+        FUOCHI ARTIFICIO
+====================================*/
+
+
+.fireworkParticle{
+
+position:fixed;
+
+width:7px;
+
+height:7px;
+
+border-radius:50%;
+
+pointer-events:none;
+
+z-index:99999;
+
+box-shadow:
+
+0 0 15px currentColor;
+
+
+animation:
+
+explodeFirework 1.5s forwards;
+
+}
+
+
+
+@keyframes explodeFirework{
+
+
+from{
+
+transform:
+
+translate(0,0)
+
+scale(1);
+
+opacity:1;
+
+}
+
+
+to{
+
+transform:
+
+translate(var(--x),var(--y))
+
+scale(0);
+
+opacity:0;
+
+}
+
+
+}
+
+
+
+
+
+
+/*====================================
+        SCHERMATA FINALE
+====================================*/
+
+
+.finalScreen{
+
+position:fixed;
+
+inset:0;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:
+
+rgba(5,8,25,.95);
+
+z-index:99998;
+
+animation:
+
+finalAppear 2s;
+
+padding:30px;
+
+}
+
+
+
+.finalScreen h1{
+
+font-family:'Great Vibes',cursive;
+
+font-size:80px;
+
+color:#ffd1e8;
+
+}
+
+
+
+.finalScreen p{
+
+font-size:25px;
+
+line-height:2;
+
+}
+
+
+
+
+
+@keyframes finalAppear{
+
+
+from{
+
+opacity:0;
+
+}
+
+
+to{
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+.finalScreen h1{
+
+font-size:55px;
+
+}
+
+
+.finalScreen p{
+
+font-size:18px;
+
+}
+
+
+}
+
+/*====================================
+        MUSIC BUTTON
+====================================*/
+
+
+#musicControl{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+background:
+
+rgba(255,92,168,.8);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+cursor:pointer;
+
+z-index:9999;
+
+box-shadow:
+
+0 0 25px pink;
+
+backdrop-filter:blur(10px);
+
+animation:pulse 2s infinite;
+
+}
+
+
+
+
+/*====================================
+        SCROLL ANIMATION
+====================================*/
+
+
+section{
+
+opacity:0;
+
+transform:
+
+translateY(50px);
+
+transition:
+
+1s;
+
+}
+
+
+section.visible{
+
+
+opacity:1;
+
+
+transform:
+
+translateY(0);
+
+
+}
+
+
+
+
+/*====================================
+        TAP RIPPLE
+====================================*/
+
+
+.touchRipple{
+
+
+position:fixed;
+
+width:30px;
+
+height:30px;
+
+border-radius:50%;
+
+background:
+
+rgba(255,255,255,.5);
+
+pointer-events:none;
+
+animation:ripple .8s forwards;
+
+z-index:99999;
+
+}
+
+
+
+@keyframes ripple{
+
+
+from{
+
+transform:scale(0);
+
+opacity:1;
+
+}
+
+
+to{
+
+transform:scale(5);
+
+opacity:0;
+
+}
+
+
+}
+
+
+
+
+/*====================================
+        RIDUZIONE MOVIMENTO
+====================================*/
+
+
+.reduce-motion *{
+
+
+animation:none!important;
+
+transition:none!important;
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+#musicControl{
+
+
+width:55px;
+
+height:55px;
+
+bottom:20px;
+
+right:20px;
+
+
+}
+
+
+}

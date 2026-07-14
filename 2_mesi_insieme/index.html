@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eva ❤️</title>
+
+    <link rel="stylesheet" href="/Css/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Stelle -->
+    <div id="stars"></div>
+
+    <!-- Cuori -->
+    <div id="hearts"></div>
+
+    <!-- Luna -->
+    <div class="moon"></div>
+
+    <!-- Musica --> 
+    <audio id="music" loop>
+        <source src="lalaland.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="musicControl">
+
+    🎵
+
+    </div>
+
+    <!-- Intro -->
+
+    <section id="intro">
+
+        <h2>Per la ragazza che ha cambiato tutto...</h2>
+
+        <button id="startButton">
+
+            Inizia il nostro film ❤️
+
+        </button>
+
+    </section>
+
+    <!-- HOME -->
+
+    <section id="home" class="hidden">
+
+        <h1>Eva ❤️</h1>
+
+        <h3>Due mesi insieme</h3>
+
+        <p class="date">
+
+            Dal 16 Maggio 2026
+
+        </p>
+
+        <div id="timer">
+
+            <div>
+
+                <span id="days">00</span>
+
+                <small>Giorni</small>
+
+            </div>
+
+            <div>
+
+                <span id="hours">00</span>
+
+                <small>Ore</small>
+
+            </div>
+
+            <div>
+
+                <span id="minutes">00</span>
+
+                <small>Minuti</small>
+
+            </div>
+
+            <div>
+
+                <span id="seconds">00</span>
+
+                <small>Secondi</small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Galleria -->
+
+    <section id="gallery">
+
+<h2>
+I nostri ricordi ❤️
+</h2>
+
+
+<div class="gallery-container">
+
+
+<button class="prev">
+❮
+</button>
+
+
+<div class="gallery-window">
+
+
+<div class="gallery-track">
+
+
+<img src="/Img/foto1.jpeg">
+
+<img src="/Img/foto2.jpeg">
+
+<img src="/Img/foto3.jpeg">
+
+<img src="/Img/foto4.jpeg">
+
+<img src="/Img/foto5.jpeg">
+
+
+</div>
+
+
+</div>
+
+
+
+<button class="next">
+❯
+</button>
+
+
+</div>
+
+
+</section>
+
+    <!-- Quiz -->
+
+<section id="quiz">
+
+    <h2>Quanto mi conosci? ❤️</h2>
+
+    <div id="quizContainer">
+
+        <div id="progressBar">
+
+            <div id="progress"></div>
+
+        </div>
+
+
+        <h3 id="question">
+            Domanda
+        </h3>
+
+
+        <div id="answers">
+
+        </div>
+
+
+        <p id="score">
+
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- La La Land -->
+
+    <section id="lalaland">
+
+        <h2>🌙</h2>
+
+        <p>
+
+            Every love story deserves its own sky.
+
+        </p>
+
+        <div class="moon-big"></div>
+
+    </section>
+
+    <!-- Lettera -->
+
+    <section id="letter">
+
+    <h2>
+        Una lettera per te ❤️
+    </h2>
+
+
+    <div class="envelope" id="envelope">
+
+
+        <div class="flap"></div>
+
+
+        <div class="paper">
+
+
+            <div id="letterContent">
+
+
+                <p>
+                Cara Eva ❤️
+                </p>
+
+
+                <p>
+                Non sapevo quale fosse il modo migliore 
+                per dimostrarti quanto sei importante per me,
+                così ho deciso di creare qualcosa che potesse 
+                raccontare un po' della nostra storia.
+                </p>
+
+
+                <p>
+                Dal 16 maggio 2026 è iniziato il nostro piccolo film.
+                Un film che non deve essere perfetto,
+                perché la cosa più bella è viverlo insieme a te.
+                </p>
+
+
+                <p>
+                So quanto ami La La Land e quella magia fatta
+                di stelle, sogni e momenti indimenticabili.
+                Per questo ho voluto creare un posto dove custodire
+                un pezzo della nostra magia.
+                </p>
+
+
+                <p>
+                La tua canzone è Hotel California,
+                la mia è Gabri di Vasco Rossi,
+                ma la canzone più bella rimane quella che stiamo
+                scrivendo noi ogni giorno.
+                </p>
+
+
+                <p>
+                Grazie per ogni sorriso,
+                ogni risata e ogni momento passato insieme.
+                </p>
+
+
+                <p>
+                Tra tutte le persone del mondo,
+                sceglierei ancora te.
+                Sempre. ❤️
+                </p>
+
+
+                <p>
+                Buoni due mesi amore mio.
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="heartSeal" id="heartSeal">
+            ❤️
+        </div>
+
+
+    </div>
+
+
+</section>
+
+    <!-- Mini gioco -->
+
+    <section id="game">
+
+        <h2>Acchiappa i cuori ❤️</h2>
+
+        <div id="heartGame">
+
+    <div id="gameInfo">
+
+        <span>Punti: <b id="gameScore">0</b></span>
+
+        <span>Tempo: <b id="gameTime">30</b>s</span>
+
+    </div>
+
+
+    <button id="startGame">
+
+        Inizia gioco ❤️
+
+    </button>
+
+
+    <div id="gameArea"></div>
+
+
+    <h3 id="gameResult"></h3>
+
+</div>
+
+    </section>
+
+    <!-- Easter Egg -->
+
+    <section id="secret">
+
+        <h2>✨</h2>
+
+        <p>
+
+            Alcuni segreti aspettano solo di essere scoperti...
+
+        </p>
+
+    </section>
+
+    <!-- Finale -->
+
+    <section id="final">
+
+        <h1>
+
+            Ti sceglierei ancora.
+
+        </h1>
+
+        <p>
+
+            Oggi.
+
+            Domani.
+
+            Sempre.
+
+        </p>
+
+        <button id="fireworks">
+
+            ❤️
+
+        </button>
+
+    </section>
+
+    <script src="/Js/java.js"></script>
+
+</body>
+
+</html>
